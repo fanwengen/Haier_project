@@ -1,0 +1,33 @@
+@import "reset";
+@import "header";
+@import "footer";
+.banner_1,.banner_1 img{
+    width: 100%;
+}
+.xinxuan{
+    .type-area{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    h3{
+        font-size: 42px;
+        text-align: center;
+        margin: 56px 0px;
+        .icon-xiangyou{
+            font-size: 22px;
+            margin-left: 10px;
+        }
+    }
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid #000;
+        .nav_li{
+            font-size: 18px;
+            padding: 10px;
+        }
+    }
+    .product{
+        height: 100px;
+    }
+}

@@ -1,0 +1,61 @@
+body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,form,input,select.textarea,fieldset,legend{
+    margin:0;
+    padding:0;
+}
+body{
+    min-width: 1200px;
+    font:14px "微软雅黑";
+}
+a{
+    text-decoration:none
+}
+li{
+    list-style-type: none;
+}
+
+b,i,em,strong{
+    font-weight: normal;
+    font-style:normal;
+}
+/* 图片间隙的问题：
+  把图片放在块状元素中，在块状元素没有设置高度的情况下，盒子的高度会比图片大3~5px
+  解决方法：
+    display:block;
+
+   把图片放在超链接a里面，在ie的低版本浏览器中，会出现蓝色的边框，解决img{border:0;}
+*/
+img{
+    display: block;
+    border:0;
+}
+/* 版心 */
+.content{
+    width:1200px;
+    margin:auto;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/*  清除浮动 */
+.clear::after{
+    content:"";
+    display:block;
+    clear:both;
+    height:0;
+    overflow:hidden;
+    visibility: hidden;
+}
+/* 解决高度塌陷，处理外边距重叠 */
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+    height:0;
+    overflow:hidden;
+    visibility: hidden;
+}
+

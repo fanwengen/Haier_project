@@ -1,0 +1,61 @@
+$sum_width:100%;
+%type_area{
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+};
+header{
+    width: $sum_width;
+    line-height: 70px;
+    background:#fff;
+    .type-area{
+        @extend %type_area;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo a img{
+        width: 85px;
+        margin-right: 100px;
+        cursor: pointer;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        flex-grow: 1;
+        .nav-li{
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+    .tools{
+        margin-left: 100px;
+    }
+    .search{
+        display: inline-block;
+        position: relative;
+        input{
+            background: #F3F3F3;
+            width: 212px;
+            height: 36px;
+            border: none;
+        }
+        .icon-linedesign-12{
+            font-size: 24px;
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+        }
+    }
+    .icon-qicheqianlian-{
+        font-size: 24px;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    .icon-yonghu{
+        font-size: 30px;
+        color: blue;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+}
+

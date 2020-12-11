@@ -1,0 +1,48 @@
+footer{
+    background-color: #F6F7F9;
+    height: 426px;
+    .type-area{
+        width: 1200px;
+        margin: 0 auto;
+        .siteinfo{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 5px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #000;
+            ul{
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                li{
+                    line-height: 26px;
+                    font-size: 12px;
+                    cursor: pointer;
+                }
+                .li_one{
+                    font-size: 14px;
+                    font-weight: 900;
+                    padding: 15px 0px;
+                }
+            }
+        }
+        .webstat{
+            display: flex;
+            justify-content: space-between;
+            ul{
+                display: flex;
+                line-height: 56px;
+                font-size: 12px;
+                cursor: pointer;
+                i{
+                    margin: 0 5px;
+                }
+                span{
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    
+    
+}
