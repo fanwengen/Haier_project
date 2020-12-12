@@ -15,7 +15,7 @@ header{
     }
     .logo a img{
         width: 85px;
-        margin-right: 100px;
+        margin-right: 60px;
         cursor: pointer;
     }
     .nav{
@@ -25,10 +25,47 @@ header{
         .nav-li{
             font-size: 14px;
             font-weight: 700;
+            height: 70px;
+            padding: 0 30px;
+            position: relative;
+            box-sizing: border-box;
         }
+        .subnav{
+            position: absolute;
+            left: 0px;
+            top: 70px;
+            li{
+                width: 100%;
+                line-height: 50px;
+                background: #eee;
+                padding-left: 15px;
+                padding-right: 15px;
+                cursor: pointer;
+                font-weight: 500;
+                display: none;
+                a{
+                    color: #000;
+                }
+            }
+            li:hover {
+                background: #fff;
+                a{
+                    color: #0c5ca8;
+                }
+            }
+        }
+        .nav-li:hover{
+            color: blue;
+            border-bottom: 6px solid blue;
+            li{
+                display: block;
+            }
+        }
+        
     }
+    
     .tools{
-        margin-left: 100px;
+        margin-left: 60px;
     }
     .search{
         display: inline-block;

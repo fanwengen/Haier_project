@@ -1,10 +1,122 @@
 @import "reset";
 @import "header";
 @import "footer";
-.banner_1,.banner_1 img{
+// 轮播图_1
+.banner_1{
     width: 100%;
+    height: 400px;
+    background: red;
 }
+// 心选精品
 .xinxuan{
+    background: #F6F7F9;
+    .type-area{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    h3{
+        font-size: 42px;
+        text-align: center;
+        padding: 56px 0px;
+        .icon-xiangyou{
+            font-size: 22px;
+            margin-left: 10px;
+        }
+    }
+    .tab_title{
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid #000;
+        .tab_li{
+            width: 75px;
+            height: 23px;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .active{
+            color: blue;
+            border-bottom: 6px solid blue;
+        }
+    }
+    // .tab_content{
+    //     position: relative;
+    // }
+    .product{
+        width: 100%;
+        padding: 70px 0 40px;
+        // display: none;
+        display: flex;
+        // position: absolute;
+        // left:-100000px;
+        .p_left{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            background: #E8EBF2;
+            transition: all 0.7s;
+            img{
+                width: 90%;
+                margin-bottom: 60px;
+                margin: 24px auto;
+                transition: all 0.7s;
+            }
+        }
+        .p_left:hover{
+            border-bottom: 8px solid blue;
+            box-shadow: 8px 8px 10px 10px #ccc ;
+            img{
+                width: 95%;
+            }
+        }
+        .p_right{
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            background: #fff;
+            div{
+                width: 50%;
+                transition: all 0.7s;
+                img{
+                    margin: 0 auto;
+                    transition: all 0.7s;
+                }
+            }
+            div:hover{
+                border-bottom: 8px solid blue;
+                box-shadow: 8px 8px 10px 10px #ccc ;
+                img{
+                    transform:scale(1.2);
+                }
+            }
+        }
+        .p_text1{
+            font-size: 18px;
+            color: #000;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .p_text2{
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+        
+    }
+    // .show{
+    //     // display: inline-block;
+    //     left: 0px;
+    // }
+}
+// 轮播图_2
+.banner_2{
+    height: 400px;
+    background: red;
+}
+// 人气排行
+.renqi{
     .type-area{
         width: 1200px;
         margin: 0 auto;
@@ -28,6 +140,53 @@
         }
     }
     .product{
-        height: 100px;
+        height: 600px;
+        background: red;
+    }
+}
+// 品牌链接
+.lianjie{
+    width: 1200px;
+    margin: 0 auto;
+    h3{
+        font-size: 42px;
+        text-align: center;
+        margin: 105px 0px 60px;
+    }
+    .icon{
+        display: flex;
+        justify-content: space-between;
+        height: 300px;
+        .sexangle{
+            cursor: pointer;
+            position: relative;
+            
+            .imgs{
+                width: 161px;
+                height: 91px;
+                background: url(https://image.haier.com/cn/images/haier2019_homepage_linkbg.png) top center no-repeat;
+                img{
+                    transition: all 0.7s ease;
+                    position: absolute;
+                    top: 45px;
+                }
+            }
+            .box{
+                width: 161px;
+                height: 40px;
+                background: #f8f8f8;
+            }
+            span{
+                display: inline-block;
+                height: 50px;
+                border-top: 50px solid #f8f8f8;
+                border-right: 80px solid transparent;
+                border-bottom: 50px solid transparent;
+                border-left: 80px solid transparent;
+            }
+        }
+        .sexangle:hover img{
+            transform:scale(1.2);
+        }
     }
 }
