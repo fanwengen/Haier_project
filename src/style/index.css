@@ -88,7 +88,9 @@ header {
     header .nav .subnav {
       position: absolute;
       left: 0px;
-      top: 70px; }
+      top: 66px;
+      box-sizing: border-box;
+      padding-right: 30px; }
       header .nav .subnav li {
         width: 100%;
         line-height: 50px;
@@ -105,8 +107,10 @@ header {
         header .nav .subnav li:hover a {
           color: #0c5ca8; }
     header .nav .nav-li:hover {
-      color: blue;
-      border-bottom: 6px solid blue; }
+      z-index: 10000;
+      color: blue; }
+      header .nav .nav-li:hover .subnav {
+        border-top: 6px solid blue; }
       header .nav .nav-li:hover li {
         display: block; }
   header .tools {
@@ -129,14 +133,16 @@ header {
     padding-left: 10px;
     cursor: pointer; }
   header .icon-yonghu {
-    font-size: 30px;
-    color: blue;
+    font-size: 24px;
     padding-left: 10px;
     cursor: pointer; }
 
 footer {
   background-color: #F6F7F9;
   height: 426px; }
+  footer .mind {
+    background-color: #F6F7F9;
+    height: 426px; }
   footer .type-area {
     width: 1200px;
     margin: 0 auto; }
@@ -172,9 +178,43 @@ footer {
           margin-left: 5px; }
 
 .banner_1 {
-  width: 100%;
-  height: 400px;
-  background: red; }
+  height: 506px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+  .banner_1 ul li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0; }
+    .banner_1 ul li img {
+      width: 100%; }
+  .banner_1 ol {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -100px;
+    display: flex; }
+    .banner_1 ol li {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #fff;
+      margin-left: 30px; }
+    .banner_1 ol .active2 {
+      background: #000; }
+  .banner_1 #left {
+    position: absolute;
+    top: 220px;
+    left: 70px;
+    color: #fff;
+    font-size: 90px; }
+  .banner_1 #right {
+    position: absolute;
+    top: 220px;
+    right: 70px;
+    color: #fff;
+    font-size: 90px; }
 
 .xinxuan {
   background: #F6F7F9; }
@@ -187,7 +227,8 @@ footer {
     padding: 56px 0px; }
     .xinxuan h3 .icon-xiangyou {
       font-size: 22px;
-      margin-left: 10px; }
+      margin-left: 10px;
+      color: blue; }
   .xinxuan .tab_title {
     display: flex;
     justify-content: space-around;
@@ -197,16 +238,22 @@ footer {
       height: 23px;
       font-size: 18px;
       padding: 10px;
-      cursor: pointer; }
+      cursor: pointer;
+      text-align: center; }
     .xinxuan .tab_title .active {
       color: blue;
       border-bottom: 6px solid blue; }
+  .xinxuan .tab_content {
+    position: relative; }
   .xinxuan .product {
     width: 100%;
     padding: 70px 0 40px;
-    display: flex; }
+    display: flex;
+    position: absolute;
+    left: -100000px; }
     .xinxuan .product .p_left {
       width: 40%;
+      height: 630px;
       display: flex;
       flex-direction: column;
       background: #E8EBF2;
@@ -223,11 +270,15 @@ footer {
         width: 95%; }
     .xinxuan .product .p_right {
       width: 60%;
+      height: 630px;
       display: flex;
       flex-wrap: wrap;
-      background: #fff; }
+      background: #fff;
+      box-sizing: border-box; }
       .xinxuan .product .p_right div {
+        box-sizing: border-box;
         width: 50%;
+        height: 315px;
         transition: all 0.7s; }
         .xinxuan .product .p_right div img {
           margin: 0 auto;
@@ -248,31 +299,208 @@ footer {
       text-align: center;
       margin-top: 10px;
       margin-bottom: 40px; }
+  .xinxuan .show {
+    left: 0px; }
 
 .banner_2 {
-  height: 400px;
-  background: red; }
+  max-width: 1680px;
+  margin: 0 auto;
+  height: 800px;
+  background: #D7C7B8;
+  margin-top: 766.4px;
+  position: relative; }
+  .banner_2 img {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    margin-bottom: -288px;
+    margin-left: -384px; }
 
-.renqi .type-area {
+.renqi {
+  width: 1519.2px;
+  margin: 0 auto;
+  background: #F6F7F9; }
+  .renqi .type-area {
+    width: 1200px;
+    margin: 0 auto; }
+  .renqi h3 {
+    font-size: 42px;
+    text-align: center;
+    padding: 56px 0px; }
+    .renqi h3 .icon-xiangyou {
+      font-size: 22px;
+      margin-left: 10px;
+      color: blue; }
+  .renqi .tab_title1 {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #000; }
+    .renqi .tab_title1 .tab_li1 {
+      width: 75px;
+      height: 23px;
+      font-size: 18px;
+      padding: 10px;
+      cursor: pointer;
+      text-align: center;
+      cursor: pointer; }
+    .renqi .tab_title1 .active1 {
+      color: blue;
+      border-bottom: 6px solid blue; }
+  .renqi .tab_content1 {
+    position: relative; }
+    .renqi .tab_content1 .product1 {
+      width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 65px;
+      padding-bottom: 130px;
+      position: absolute;
+      left: -100000px; }
+      .renqi .tab_content1 .product1 .p_left, .renqi .tab_content1 .product1 .p_middle, .renqi .tab_content1 .product1 .p_right {
+        width: 31%;
+        transition: all .8s;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12);
+        cursor: pointer; }
+        .renqi .tab_content1 .product1 .p_left img, .renqi .tab_content1 .product1 .p_middle img, .renqi .tab_content1 .product1 .p_right img {
+          width: 350px;
+          padding: 20px 0px 40px 10px; }
+        .renqi .tab_content1 .product1 .p_left :nth-child(2), .renqi .tab_content1 .product1 .p_middle :nth-child(2), .renqi .tab_content1 .product1 .p_right :nth-child(2) {
+          font-size: 18px;
+          text-align: center;
+          padding-bottom: 10px; }
+        .renqi .tab_content1 .product1 .p_left :nth-child(3), .renqi .tab_content1 .product1 .p_middle :nth-child(3), .renqi .tab_content1 .product1 .p_right :nth-child(3) {
+          font-size: 12px;
+          text-align: center; }
+        .renqi .tab_content1 .product1 .p_left div, .renqi .tab_content1 .product1 .p_middle div, .renqi .tab_content1 .product1 .p_right div {
+          width: 180px;
+          line-height: 50px;
+          border: 1px solid blue;
+          border-radius: 25px;
+          text-align: center;
+          color: blue;
+          margin: 40px auto;
+          transition: all .8s; }
+        .renqi .tab_content1 .product1 .p_left div:hover, .renqi .tab_content1 .product1 .p_middle div:hover, .renqi .tab_content1 .product1 .p_right div:hover {
+          box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25); }
+      .renqi .tab_content1 .product1 .p_left:hover, .renqi .tab_content1 .product1 .p_middle:hover, .renqi .tab_content1 .product1 .p_right:hover {
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); }
+      .renqi .tab_content1 .product1 .p_left {
+        background: #fff url(https://image.haier.com/cn/images/haier2019_homepage_paihang1.png) 20px 20px no-repeat; }
+      .renqi .tab_content1 .product1 .p_middle {
+        background: #fff url(https://image.haier.com/cn/images/haier2019_homepage_paihang2.png) 20px 20px no-repeat; }
+      .renqi .tab_content1 .product1 .p_right {
+        background: #fff url(https://image.haier.com/cn/images/haier2019_homepage_paihang3.png) 20px 20px no-repeat; }
+    .renqi .tab_content1 .show1 {
+      left: 0px; }
+
+.huodong {
+  width: 100%;
+  margin-top: 786.6px;
+  margin-bottom: 100px; }
+  .huodong .type-area {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex; }
+  .huodong .quanwu {
+    width: 50%;
+    height: 578px;
+    position: relative; }
+    .huodong .quanwu .imgs {
+      cursor: pointer; }
+      .huodong .quanwu .imgs img {
+        position: absolute;
+        top: 0;
+        left: 0; }
+    .huodong .quanwu h3 {
+      position: absolute;
+      bottom: 60px;
+      left: 0px;
+      font-size: 42px;
+      cursor: pointer; }
+    .huodong .quanwu p {
+      width: 400px;
+      position: absolute;
+      bottom: 5px;
+      left: 0px;
+      cursor: pointer; }
+  .huodong .jijie {
+    width: 50%;
+    height: 578px;
+    position: relative; }
+    .huodong .jijie .imgs {
+      cursor: pointer; }
+      .huodong .jijie .imgs img {
+        position: absolute;
+        bottom: 10px;
+        right: 0; }
+    .huodong .jijie h3 {
+      position: absolute;
+      top: 0px;
+      right: 220px;
+      font-size: 42px;
+      cursor: pointer; }
+    .huodong .jijie p {
+      width: 300px;
+      position: absolute;
+      top: 75px;
+      right: 130px;
+      cursor: pointer; }
+
+.story {
+  background: #F6F7F9; }
+  .story .type-area {
+    width: 1200px;
+    margin: 0 auto; }
+  .story h3 {
+    font-size: 42px;
+    text-align: center;
+    padding: 70px 0px 20px; }
+    .story h3 .icon-xiangyou {
+      font-size: 22px;
+      margin-left: 10px;
+      color: blue; }
+  .story p {
+    width: 600px;
+    margin: 0 auto 40px; }
+
+.message .type-area {
   width: 1200px;
   margin: 0 auto; }
-.renqi h3 {
+.message h3 {
   font-size: 42px;
   text-align: center;
-  margin: 56px 0px; }
-  .renqi h3 .icon-xiangyou {
+  padding: 70px 0px; }
+  .message h3 .icon-xiangyou {
     font-size: 22px;
-    margin-left: 10px; }
-.renqi .nav {
-  display: flex;
-  justify-content: space-around;
-  border-bottom: 1px solid #000; }
-  .renqi .nav .nav_li {
-    font-size: 18px;
-    padding: 10px; }
-.renqi .product {
-  height: 600px;
-  background: red; }
+    margin-left: 10px;
+    color: blue; }
+.message .box {
+  display: flex; }
+  .message .box .left {
+    display: flex;
+    flex-direction: column; }
+    .message .box .left .text {
+      width: 640px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #ccc; }
+      .message .box .left .text h4 {
+        font-size: 30px;
+        margin: 43px 0; }
+      .message .box .left .text p {
+        font-size: 16px; }
+  .message .box .right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 140px; }
+    .message .box .right .text {
+      width: 420px;
+      padding-bottom: 46px;
+      border-bottom: 1px solid #ccc; }
+      .message .box .right .text h4 {
+        font-size: 18px;
+        margin: 35px 0 20px; }
+      .message .box .right .text p {
+        font-size: 14px; }
 
 .lianjie {
   width: 1200px;
