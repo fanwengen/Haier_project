@@ -1,4 +1,7 @@
 <?php
+header('Access-Control-Allow-Origin:*');  //允许任意的域名访问
+header('Access-Control-Allow-Method:POST,GET'); //允许请求方式是get和post
+
 //1.连接数据库
 include "conn.php";
 

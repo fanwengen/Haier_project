@@ -1,6 +1,9 @@
 <?php
+header('Access-Control-Allow-Origin:*');  //允许任意的域名访问
+header('Access-Control-Allow-Method:POST,GET'); //允许请求方式是get和post
+
 include "conn.php";//引入数据库连接代码。
-$result = $conn->query("select * from taobaogoods"); //获取数据的结果集(记录集)
+$result = $conn->query("select * from haiergoods"); //获取数据的结果集(记录集)
 $num = $result->num_rows; //记录集的总条数
 
 
@@ -19,7 +22,7 @@ if (isset($_GET['page'])) {//判断前端传入的页面是否存在，
 
 //根据传入的页码，计算起始的偏移值。
 $page = ($pagevalue - 1) * $pagesize;
-$sql1 = "select * from taobaogoods limit $page,$pagesize";
+$sql1 = "select * from haiergoods limit $page,$pagesize";
 $res = $conn->query($sql1);
 //通过二维数组输出
 // $result->num_rows; //记录集的条数

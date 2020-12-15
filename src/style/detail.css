@@ -147,48 +147,63 @@ footer {
         footer .type-area .webstat ul span {
           margin-left: 5px; }
 
-.banner {
-  max-width: 1600px;
-  margin: 0 auto; }
-  .banner img {
-    width: 100%; }
+main {
+  background: #F0F1F4; }
 
-.sort {
+.goodsinfo {
   width: 1200px;
   margin: 0 auto;
-  display: flex; }
-  .sort button {
-    margin: 60px 30px;
-    padding: 5px 10px;
-    border-radius: 5px; }
-  .sort .active1 {
-    background: pink;
-    color: #fff; }
-
-.commodity {
-  width: 1200px;
-  margin: 0 auto 100px; }
-  .commodity .list ul {
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0px; }
+  .goodsinfo .wrap {
+    width: 50%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-    .commodity .list ul li {
-      width: 24%; }
-      .commodity .list ul li img {
-        width: 229px;
-        height: 229px;
-        margin: 0 auto; }
-    .commodity .list ul li:hover {
-      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); }
-    .commodity .list ul p {
-      margin: 20px auto 10px;
-      text-align: center;
-      color: #000; }
-    .commodity .list ul span {
-      display: block;
-      margin: 0px auto 30px;
-      text-align: center;
-      color: #425AAA; }
+    flex-direction: column; }
+    .goodsinfo .wrap #spic {
+      margin: 0px auto 30px; }
+    .goodsinfo .wrap #smallpic {
+      width: 480px; }
+    .goodsinfo .wrap #ulist {
+      display: flex; }
+      .goodsinfo .wrap #ulist #list {
+        display: flex;
+        width: 430px;
+        margin: 0px auto;
+        overflow: hidden; }
+        .goodsinfo .wrap #ulist #list li {
+          width: 62px;
+          height: 62px;
+          margin: 0 10px;
+          border: 1px solid #ccc; }
+        .goodsinfo .wrap #ulist #list img {
+          width: 62px; }
+  .goodsinfo .goodsinfo-word {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 100px; }
+    .goodsinfo .goodsinfo-word .p-name {
+      font-size: 36px; }
+      .goodsinfo .goodsinfo-word .p-name a {
+        font-weight: 900;
+        color: #000; }
+    .goodsinfo .goodsinfo-word .p-price em {
+      font-size: 14px; }
+    .goodsinfo .goodsinfo-word .p-price .loadpcp {
+      font-size: 36px;
+      margin-left: 5px; }
+    .goodsinfo .goodsinfo-word .p-btn {
+      width: 200px;
+      line-height: 48px;
+      border-radius: 24px;
+      background: #0C5CA8;
+      text-align: center; }
+      .goodsinfo .goodsinfo-word .p-btn a {
+        font-size: 18px;
+        color: #fff; }
 
-/*# sourceMappingURL=list.css.map */
+/*# sourceMappingURL=detail.css.map */

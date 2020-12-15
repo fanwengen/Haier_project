@@ -1,11 +1,12 @@
 @import "reset";
 @import "header";
 @import "footer";
-// body{
-//     width: 100%;
-// }
-// 轮播图_1
+main{
+    width: 100%;
+}
 .banner_1{
+    width: 1519px;
+    margin: 0 auto;
     height: 506px;
     position: relative;
     overflow: hidden;

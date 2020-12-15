@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品列表页</title>
+    <meta name="referrer" content="no-referrer"/>
     <link rel="stylesheet" href="./fonts/iconfont.css">
     <link rel="stylesheet" href="./style/list.css">
+    <link rel="stylesheet" href="./style/pagination.css">
+    
 </head>
 <body>
     <!-- 头部 -->
     <header>
         <div class="type-area">
             <div class="logo">
-                <a href="#"><img src="./imdges/haier2020_logo.webp" alt=""></a>
+                <a href="./index1.html"><img src="https://image.haier.com/cn/images/haier2020_logo.png" alt=""></a>
             </div>
             <ul class="nav">
                 <li class="nav-li">智慧家庭
@@ -80,11 +83,23 @@
         <div class="banner">
             <img src="https://image.haier.com/cn/cooling/W020191111655744163353.png" alt="">
         </div>
-        <div class="list">
-            <ul>
+        <div class="commodity">
+            <div class="sort">
+                <button class="active1">默认排序</button>
+                <button>升序排列</button>
+                <button>降序排列</button>
+            </div>
+            <div class="list">
+                <ul>
 
-            </ul>
+                </ul>
+            </div>
+            <div class="pagelist">
+                <div class="m-style page">
+                </div>
+            </div>
         </div>
+        
     </main>
     <!-- 尾部 -->
     <footer>
@@ -171,6 +186,4 @@
     </footer>
 </body>
 </html>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
-<script src="./script/list.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="list_module"></script>

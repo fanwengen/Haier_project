@@ -1,0 +1,101 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin:0;
+}
+a{
+    text-decoration: none;
+}
+.pagelist {
+    clear: both;
+    width:1200px;
+    margin:0 auto;
+    text-align: right;
+    padding-right:20px;
+}
+.m-style {
+    float: left;
+    text-align: center; 
+    margin: 30px;
+}
+
+.m-style:before,
+.m-style:after {
+    content: "";
+    display: table;
+}
+
+.m-style:after {
+    clear: both;
+    overflow: hidden;
+}
+
+.m-style span {
+    float: left;
+    margin: 0 5px;
+    width: 45px;
+    line-height: 30px;
+    border-radius: 5px;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.m-style .active {
+    float: left;
+    margin: 0 5px;
+    width: 45px;
+    line-height: 30px;
+    background: #0C5CA8;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #0C5CA8;
+}
+
+.m-style a {
+    float: left;
+    margin: 0 5px;
+    width: 45px;
+    line-height: 30px;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.m-style a:hover {
+    box-shadow: 0 7px 7px #e7e5e5;
+}
+
+.m-style .next,
+.m-style .prev {
+    font-family: "Simsun";
+    font-size: 16px;
+    font-weight: bold;
+    width:80px;
+}
+
+.now,
+.count {
+    padding: 0 5px;
+    color: #f00;
+}
+
+.eg img {
+    max-width: 800px;
+    min-height: 500px;
+}
+
+.pagelist input {
+    float: left;
+    margin: 0 5px;
+    width: 100px;
+    line-height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    outline: none;
+    color: #bdbdbd;
+    font-size: 14px;
+}

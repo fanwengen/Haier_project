@@ -28,36 +28,6 @@ img {
   display: block;
   border: 0; }
 
-/* 版心 */
-.content {
-  width: 1200px;
-  margin: auto; }
-
-.left {
-  float: left; }
-
-.right {
-  float: right; }
-
-/*  清除浮动 */
-.clear::after {
-  content: "";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden; }
-
-/* 解决高度塌陷，处理外边距重叠 */
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden; }
-
 header .type-area {
   width: 1200px;
   display: flex;
@@ -177,7 +147,12 @@ footer {
         footer .type-area .webstat ul span {
           margin-left: 5px; }
 
+main {
+  width: 100%; }
+
 .banner_1 {
+  width: 1519px;
+  margin: 0 auto;
   height: 506px;
   position: relative;
   overflow: hidden;

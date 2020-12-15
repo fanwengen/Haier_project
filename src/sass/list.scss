@@ -3,7 +3,58 @@
 @import "footer";
 // 主体
 .banner{
+    max-width: 1600px;
+    margin: 0 auto;
     img{
         width: 100%;
+    }
+}
+.sort{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    button{
+        margin: 60px 30px;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .active1{
+        background: pink;
+        color: #fff;
+    }
+}
+.commodity{
+    width: 1200px;
+    margin: 0 auto 100px;
+    .list{
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li{
+                width: 24%;
+                img{
+                    width: 229px;
+                    height: 229px;
+                    margin: 0 auto;
+                }
+            }
+            li:hover{
+                box-shadow: 0 8px 10px rgba(0,0,0,.1);
+            }
+            p{
+                margin: 20px auto 10px;
+                text-align: center;
+                color: #000;
+            }
+            span{
+                display: block;
+                margin: 0px auto 30px;
+                text-align: center;
+                color: #425AAA;
+            }
+        }
+        
     }
 }
