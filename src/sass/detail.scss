@@ -10,43 +10,101 @@ main{
     display: flex;
     justify-content: space-between;
     padding: 100px 0px;
-    .wrap{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        #spic{
-            margin: 0px auto 30px;
-        }
-        #smallpic{
+    position: relative;
+    .wrap {
+        float: left;
+        position: relative;
+        #spic {
             width: 480px;
+            height: 480px;
+            float: left;
+            position: relative;
+            cursor: crosshair;
+            img {
+                width: 480px;
+                height: 480px;
+            }
+            #sf {
+                width: 50px;
+                height: 50px;
+                background: #0C5CA8;
+                opacity: 0.3;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                visibility: hidden;
+            }
         }
-        #ulist{
-            display: flex;
-            #list{
-                display: flex;
-                width: 430px;
-                margin: 0px auto;
+        #bf {
+            width: 480px;
+            height: 480px;
+            background: #fff;
+            overflow: hidden;
+            position: absolute;
+            left: 550px;
+            visibility: hidden;
+            z-index: 100;
+            img {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 960px;
+                height: 960px;
+            }
+        }
+        #ulist {
+            position: absolute;
+            left: 0px;
+            top: 490px;
+            width: 492px;
+            height: 62px;
+            
+            a {
+                float: left;
+                width: 16px;
+                text-decoration: none;
+                line-height: 62px;
+                text-align: center;
+                font-size: 25px;
+                color: #000;
+            }
+            #right{
+                position: absolute;
+                right: 48px;
+                top: 0;
+            }
+            #list {
+                margin-left: 18px;
+                width: 410px;
+                height: 62px;
+                position: relative;
                 overflow: hidden;
-                li{
+                ul{
+                    position: relative;
+                    width: 1200px;
+                    height: 62px;
+                }
+                li {
+                    display: inline-block;
                     width: 62px;
                     height: 62px;
-                    margin: 0 10px;
-                    border: 1px solid #ccc;
-                }
-                img{
-                    width: 62px;
+                    padding: 0px 10px;
+                    cursor: pointer;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        border: 1px solid #ccc;
+                    }
                 }
             }
         }
     }
     .goodsinfo-word{
-        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content:space-around;
         align-items: center;
-        box-sizing: border-box;
-        padding-bottom: 100px;
+        box-sizing: border-box;   
         .p-name{
             font-size: 36px;
             a{
@@ -69,6 +127,9 @@ main{
             border-radius: 24px;
             background: #0C5CA8;
             text-align: center;
+            #count{
+                display: none;
+            }
             a{
                 font-size: 18px;
                 color: #fff;

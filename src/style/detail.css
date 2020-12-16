@@ -155,37 +155,88 @@ main {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 100px 0px; }
+  padding: 100px 0px;
+  position: relative; }
   .goodsinfo .wrap {
-    width: 50%;
-    display: flex;
-    flex-direction: column; }
+    float: left;
+    position: relative; }
     .goodsinfo .wrap #spic {
-      margin: 0px auto 30px; }
-    .goodsinfo .wrap #smallpic {
-      width: 480px; }
+      width: 480px;
+      height: 480px;
+      float: left;
+      position: relative;
+      cursor: crosshair; }
+      .goodsinfo .wrap #spic img {
+        width: 480px;
+        height: 480px; }
+      .goodsinfo .wrap #spic #sf {
+        width: 50px;
+        height: 50px;
+        background: #0C5CA8;
+        opacity: 0.3;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        visibility: hidden; }
+    .goodsinfo .wrap #bf {
+      width: 480px;
+      height: 480px;
+      background: #fff;
+      overflow: hidden;
+      position: absolute;
+      left: 550px;
+      visibility: hidden;
+      z-index: 100; }
+      .goodsinfo .wrap #bf img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 960px;
+        height: 960px; }
     .goodsinfo .wrap #ulist {
-      display: flex; }
+      position: absolute;
+      left: 0px;
+      top: 490px;
+      width: 492px;
+      height: 62px; }
+      .goodsinfo .wrap #ulist a {
+        float: left;
+        width: 16px;
+        text-decoration: none;
+        line-height: 62px;
+        text-align: center;
+        font-size: 25px;
+        color: #000; }
+      .goodsinfo .wrap #ulist #right {
+        position: absolute;
+        right: 48px;
+        top: 0; }
       .goodsinfo .wrap #ulist #list {
-        display: flex;
-        width: 430px;
-        margin: 0px auto;
+        margin-left: 18px;
+        width: 410px;
+        height: 62px;
+        position: relative;
         overflow: hidden; }
+        .goodsinfo .wrap #ulist #list ul {
+          position: relative;
+          width: 1200px;
+          height: 62px; }
         .goodsinfo .wrap #ulist #list li {
+          display: inline-block;
           width: 62px;
           height: 62px;
-          margin: 0 10px;
-          border: 1px solid #ccc; }
-        .goodsinfo .wrap #ulist #list img {
-          width: 62px; }
+          padding: 0px 10px;
+          cursor: pointer; }
+          .goodsinfo .wrap #ulist #list li img {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #ccc; }
   .goodsinfo .goodsinfo-word {
-    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    box-sizing: border-box;
-    padding-bottom: 100px; }
+    box-sizing: border-box; }
     .goodsinfo .goodsinfo-word .p-name {
       font-size: 36px; }
       .goodsinfo .goodsinfo-word .p-name a {
@@ -202,6 +253,8 @@ main {
       border-radius: 24px;
       background: #0C5CA8;
       text-align: center; }
+      .goodsinfo .goodsinfo-word .p-btn #count {
+        display: none; }
       .goodsinfo .goodsinfo-word .p-btn a {
         font-size: 18px;
         color: #fff; }
